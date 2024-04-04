@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item type="id" name="Wrook"/>
+    <item type="id" name="Wknight"/>
+    <item type="id" name="Wbishop"/>
+    <item type="id" name="Wqueen"/>
+    <item type="id" name="Wking"/>
+    <item type="id" name="Wpawn"/>
+    <item type="id" name="Brook"/>
+    <item type="id" name="Bknight"/>
+    <item type="id" name="Bbishop"/>
+    <item type="id" name="Bqueen"/>
+    <item type="id" name="Bking"/>
+    <item type="id" name="Bpawn"/>
+    <item type="id" name="empty"/>
+</resources>

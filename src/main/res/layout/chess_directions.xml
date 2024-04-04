@@ -1,0 +1,246 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/tan">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Rules of Chess"
+        android:textAlignment="center"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="20dp"
+        android:textSize="40dp"
+        android:id = "@+id/topMessage"
+        />
+
+    <ImageView
+        android:id="@+id/kingimage"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_below="@+id/topMessage"
+        android:layout_marginStart="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="0dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="20dp"
+        android:src="@drawable/w_king_1x" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/kingimage"
+        android:layout_marginLeft="0dp"
+        android:layout_marginRight="20dp"
+        android:layout_toRightOf="@+id/kingimage"
+        android:textColor="@color/black"
+        android:text="KING: Your goal is to protect your king at all costs (while capturing your opponent's king). This piece can move one square in any direction"
+        />
+    <ImageView
+        android:id="@+id/rookimage"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_below="@+id/queenimage"
+        android:layout_marginStart="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="0dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="20dp"
+        android:src="@drawable/w_rook_1x" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/queenimage"
+        android:layout_marginLeft="0dp"
+        android:layout_marginRight="20dp"
+        android:layout_toRightOf="@+id/queenimage"
+        android:textColor="@color/black"
+        android:text="QUEEN: This powerful piece can move any number of squares in any direction diagonally, horizontally, or vertically, unless obstructed."
+        />
+    <ImageView
+        android:id="@+id/queenimage"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_below="@+id/kingimage"
+        android:layout_marginStart="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="0dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="20dp"
+        android:src="@drawable/w_queen_1x" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/rookimage"
+        android:layout_marginLeft="0dp"
+        android:layout_marginRight="20dp"
+        android:layout_toRightOf="@+id/rookimage"
+        android:textColor="@color/black"
+        android:text="ROOK: This piece can move any number of squares horizontally or vertically, unless obstructed."
+        />
+    <ImageView
+        android:id="@+id/bishopimage"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_below="@+id/knightimage"
+        android:layout_marginStart="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="0dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="20dp"
+        android:src="@drawable/w_bishop_1x" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/bishopimage"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="0dp"
+        android:layout_marginTop="11dp"
+        android:layout_marginRight="20dp"
+        android:textColor="@color/black"
+        android:layout_toRightOf="@+id/bishopimage"
+        android:text="BISHOP: This piece can move any number of squares diagonally, unless obstructed." />
+
+    <ImageView
+        android:id="@+id/knightimage"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_below="@+id/rookimage"
+        android:layout_marginStart="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="0dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="20dp"
+        android:src="@drawable/w_knight_1x" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/knightimage"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="0dp"
+        android:layout_marginTop="-6dp"
+        android:layout_marginRight="20dp"
+        android:layout_toRightOf="@+id/knightimage"
+        android:textColor="@color/black"
+        android:text="KNIGHT: This piece can only move two squares horizontally or vertically, followed by moving one square on the opposite axis. This piece also has the unique ability to jump over other pieces." />
+
+    <ImageView
+        android:id="@+id/pawnimage"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_below="@+id/bishopimage"
+        android:layout_marginStart="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="0dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="20dp"
+        android:src="@drawable/w_pawn_1x" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/pawnimage"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="0dp"
+        android:layout_marginTop="-6dp"
+        android:layout_marginRight="20dp"
+        android:layout_toRightOf="@+id/pawnimage"
+        android:textColor="@color/black"
+        android:id="@+id/pawnimagetext"
+        android:text="PAWN: This can only move one space forward. When moving from its starting position, it may move two squares. They can only capture pieces that are diagonally forward one square." />
+
+
+
+    <Button
+        android:id="@+id/startbutton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/pawnimagetext"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:backgroundTint="@color/black"
+        android:gravity="center"
+        android:onClick="startGame"
+        android:text="START GAME" />
+
+    <Button
+        android:id="@+id/dummyMiddle"
+        android:layout_width="10dp"
+        android:layout_height="10dp"
+        android:backgroundTint="@color/tan"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/kingimageleft" />
+
+    <Button
+        android:id="@+id/statsbutton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/kingimageleft"
+        android:layout_marginTop="20dp"
+        android:layout_toLeftOf="@id/dummyMiddle"
+        android:backgroundTint="@color/black"
+        android:gravity="center"
+        android:onClick="findStats"
+        android:text="STATISTICS" />
+
+    <Button
+        android:id="@+id/emailbutton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/kingimageright"
+        android:layout_toRightOf="@+id/dummyMiddle"
+        android:layout_marginTop="20dp"
+        android:backgroundTint="@color/black"
+        android:gravity="center"
+        android:onClick="sendEmail"
+        android:text="SEND RATING" />
+
+
+    <ImageView
+        android:id="@+id/kingimageleft"
+        android:layout_width="75dp"
+        android:layout_height="75dp"
+        android:layout_alignBottom="@+id/startbutton"
+        android:layout_toLeftOf="@+id/startbutton"
+        android:src="@drawable/b_king_1x" />
+
+    <RatingBar
+        android:id="@+id/ratingBar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:layout_below="@+id/emailbutton"
+        android:paddingRight="0dp"
+        android:paddingLeft="0dp"
+        android:scaleX="0.35"
+        android:scaleY="0.35"
+        android:stepSize="0.5"
+        android:numStars="5"/>
+
+
+    <ImageView
+        android:id="@+id/kingimageright"
+        android:layout_width="75dp"
+        android:layout_height="75dp"
+        android:layout_alignBottom="@+id/startbutton"
+        android:layout_toRightOf="@+id/startbutton"
+        android:src="@drawable/w_king_1x" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Give us feedback!"
+        android:layout_below="@id/statsbutton"
+        android:layout_centerHorizontal="true"
+        android:gravity="center"
+        android:layout_marginTop="5dp"
+        />
+
+</RelativeLayout>
